@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}contact {% endblock title%}
+
+{%block body %}
+    <style>
+        
+
+        body {
+         background-color: #191919;
+            
+        }
+
+        .contener {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            position: absolute;
+          
+            background-color: #aba9af;
+            margin-top: 90px;
+            padding: 5px 20px 15px 20px;
+            border: rgb(223, 222, 220);
+            border-radius: 10px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        input[type="desc"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        fieldset {
+            background-color: #fff;
+            border: 1px solid rgb(27, 23, 23);
+        }
+
+        .main_heading {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(95, 194, 124);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(61, 134, 83);
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="contener">
+        <form method="post" action="/contact">
+            <h2 class="main_heading">form</h2>
+            <h3>contact information</h3>
+            <p> name: <input type="text" id="" name="name" placeholder="enter your name" required> </p>
+            <p>Email: <input type="email" name="email" id="email" required></p>
+            <p>phon number: <input type="phone" id="phone" name="phone" placeholder="enter your phone number"></p>
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+    </div>
+    
+</section>
+</body>
+{% endblock body%}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}about {% endblock title%}
+
+{%block body %}
+<html>
+<head>
+    <title>about us</title>
+    <style>
+        .about{
+            width: 100%;
+            padding: 100px 0px;
+            background-color: #191919;
+        }
+        .about img{
+            height: auto;
+            width: 368px;
+            border-radius: 10px;
+        }
+        .about-text{
+            width: 550px;
+        }
+        .main{
+            width: 1130px;
+            max-width: 95%;
+            margin:  0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about-text h2{
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .about-text h5{
+            color: white;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+            
+        }
+        .about-text p{
+            color: #fcfc;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+        button{
+            background-color: #f9004d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+        }
+        button:hover{
+            background-color: transparent;
+            border: 2px solid;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     <!-- About section start-->
+     <section class="about">
+        <div class="main">
+            <img src ="/static/pics/logo.png">
+            <div class="about-text">
+              <h2>Npics</h2>
+              <h5>heigh quality<span> images </span></h5>
+              <p>
+                we provide you heigh quality images for free we also provide premiame imeges on demand &#128522;
+              </p>
+              <button type="button">
+                  let's talk
+              </button>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
+{% endblock body%}
